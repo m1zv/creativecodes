@@ -118,7 +118,7 @@
                 <div class="row">
                     <!-- CodeQuest -->
                     <div class="col-12 col-md-4 mb-4">
-                        <div class="product-card text-center">
+                        <div class="product-card text-center" data-attr="box_code_quest">
                             <h5>CodeQuest</h5>
                             <p>Learn to code through fun quests and daily challenges.</p>
                         </div>
@@ -126,7 +126,7 @@
 
                     <!-- MindLoop -->
                     <div class="col-12 col-md-4 mb-4">
-                        <div class="product-card text-center">
+                        <div class="product-card text-center" data-attr="box_mind_loop">
                             <h5>MindLoop</h5>
                             <p>Build new skills through gamified and repeatable learning.</p>
                         </div>
@@ -134,7 +134,7 @@
 
                     <!-- PlanForge -->
                     <div class="col-12 col-md-4 mb-4">
-                        <div class="product-card text-center">
+                        <div class="product-card text-center" data-attr="box_plan_forge">
                             <h5>PlanForge</h5>
                             <p>Start your project with a structured and guided workflow.</p>
                         </div>
@@ -150,18 +150,18 @@
                 <form class="row g-3">
                     <div class="col-12 col-md-6">
                         <label for="name" class="form-label">Your Name</label>
-                        <input type="text" class="form-control" id="name" required />
+                        <input type="text" class="form-control" id="name"  data-attr="input_contact_name" required />
                     </div>
                     <div class="col-12 col-md-6">
                         <label for="email" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="email" required />
+                        <input type="email" class="form-control" id="email"  data-attr="input_contact_email" required />
                     </div>
                     <div class="col-12">
                         <label for="message" class="form-label">Message</label>
-                        <textarea class="form-control" id="message" rows="4" required></textarea>
+                        <textarea class="form-control" id="message" rows="4"  data-attr="input_contact_message" required></textarea>
                     </div>
                     <div class="col-12 text-center">
-                        <button type="submit" data-attr="button_contact_send" class="btn btn-primary px-4" data-attr="contact_send">Send</button>
+                        <button type="submit" data-attr="button_contact_send" class="btn btn-primary px-4">Send</button>
                     </div>
                 </form>
             </div>
