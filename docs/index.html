@@ -216,25 +216,91 @@
         <section id="contact" class="bg-light">
             <div class="container">
                 <h2 class="text-center mb-4">Contact Us</h2>
-                <form action="https://formspree.io/f/myzwvoby" method="POST" class="row g-3">
+
+                <!-- hidden iframe to keep user on page -->
+                <iframe name="formspree-frame" id="formspree-frame" style="display:none;" title=""></iframe>
+
+                <!-- Contact form posts into the iframe -->
+                <form
+                        id="contact-form"
+                        action="https://formspree.io/f/myzwvoby"
+                        method="POST"
+                        target="formspree-frame"
+                        class="row g-3"
+                >
                     <div class="col-12 col-md-6">
                         <label for="name" class="form-label">Your Name</label>
-                        <input type="text" class="form-control" id="name" data-attr="input_contact_name" required />
+                        <input
+                                type="text"
+                                class="form-control"
+                                id="name"
+                                name="name"
+                                data-attr="input_contact_name"
+                                required
+                        />
                     </div>
                     <div class="col-12 col-md-6">
                         <label for="email" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="email" name="email" data-attr="input_contact_email" required />
+                        <input
+                                type="email"
+                                class="form-control"
+                                id="email"
+                                name="email"
+                                data-attr="input_contact_email"
+                                required
+                        />
                     </div>
                     <div class="col-12">
                         <label for="message" class="form-label">Message</label>
-                        <textarea class="form-control" id="message" name="message" rows="4" data-attr="input_contact_message" required></textarea>
+                        <textarea
+                                class="form-control"
+                                id="message"
+                                name="message"
+                                rows="4"
+                                data-attr="input_contact_message"
+                                required
+                        ></textarea>
                     </div>
                     <div class="col-12 text-center">
-                        <button type="submit" class="btn btn-primary px-4" data-attr="button_contact_send">Send</button>
+                        <button
+                                type="submit"
+                                class="btn btn-primary px-4"
+                                data-attr="button_contact_send"
+                        >
+                            Send
+                        </button>
                     </div>
                 </form>
+
+                <!-- hidden success message -->
+                <div id="contact-success" class="alert alert-success mt-4 d-none">
+                    Thank you for your message! We’ll get back to you soon.
+                </div>
             </div>
         </section>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              const form = document.getElementById('contact-form');
+              const iframe = document.getElementById('formspree-frame');
+              const successMsg = document.getElementById('contact-success');
+              let hasSubmitted = false;
+
+              // Mark that the form was submitted
+              form.addEventListener('submit', function() {
+                hasSubmitted = true;
+                successMsg.classList.add('d-none');
+              });
+
+              // When iframe loads (i.e. after Formspree response), clear & show message
+              iframe.addEventListener('load', function() {
+                if (!hasSubmitted) return;
+                form.reset();            // clear fields
+                successMsg.classList.remove('d-none');
+                hasSubmitted = false;
+              });
+            });
+        </script>
 
         <!-- Footer -->
         <footer class="text-center py-4 bg-dark text-light">
