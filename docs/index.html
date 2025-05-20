@@ -3,10 +3,15 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Creative Codes provides custom software development, IT architecture, and gamified learning platforms like CodeQuest and MindLoop—empowering clients with intuitive, cutting-edge digital experiences." />
+        <meta name="keywords" content="Custom software development, Java specialists, IT automation, gamified learning, CI/CD consulting" />
+        <link rel="canonical" href="https://m1zv.github.io/creativecodes/" />
         <title>Creative Codes</title>
 
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="./style/css.style" rel="stylesheet" />
+
         <style>
             html {
               scroll-behavior: smooth;
@@ -38,12 +43,30 @@
               box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             }
         </style>
+
+        <!-- JSON-LD Schema for Organization -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "name": "Creative Codes",
+                "url": "https://m1zv.github.io/creativecodes/",
+                "logo": "https://m1zv.github.io/creativecodes/img/logo.png",
+                "contactPoint": [{
+                    "@type": "ContactPoint",
+                    "email": "hello@creativecodes.com",
+                    "contactType": "customer service",
+                    "areaServed": "Worldwide"
+                }]
+            }
+        </script>
+
         <script>
-            !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init bs ws ge fs capture De calculateEventProperties $s register register_once register_for_session unregister unregister_for_session Is getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty xs Ss createPersonProfile Es gs opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing ys debug ks getPageViewId captureTraceFeedback captureTraceMetric".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+            !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init bs ws ge fs capture De calculateEventProperties $s register register_once register_for_session unregister unregister_for_session Is getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetFeatureFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty xs Ss createPersonProfile Es gs opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing ys debug ks getPageViewId captureTraceFeedback captureTraceMetric".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
             posthog.init('phc_1i5lLd9jvUzIPs4w0lLAHgbeLDWACJxHsMttR2Zkqb7', {
-                api_host: 'https://eu.i.posthog.com',
-                person_profiles: 'identified_only', // or 'always' to create profiles for anonymous users as well
-            })
+              api_host: 'https://eu.i.posthog.com',
+              person_profiles: 'identified_only'
+            });
         </script>
     </head>
     <body>
@@ -52,7 +75,7 @@
         <nav class="navbar navbar-expand-lg fixed-top shadow">
             <div class="container">
                 <a class="navbar-brand text-white" href="#">Creative Codes</a>
-                <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -79,7 +102,11 @@
                     </div>
                     <!-- Image Column -->
                     <div class="col-md-6 text-center">
-                        <img src="img/creative-codes-hero.png" alt="Creative Codes Hero" class="img-fluid" style="max-height: 350px;" />
+                        <img src="img/creative-codes-hero.png"
+                             alt="Illustration of collaborative software development"
+                             class="img-fluid"
+                             style="max-height: 350px;"
+                             loading="lazy" />
                     </div>
                 </div>
             </div>
@@ -89,18 +116,18 @@
             <div class="container">
                 <h2 class="text-center mb-4">Our Mission</h2>
                 <div>
-                    <p>
-                        We strive to empower people through intuitive, engaging, and meaningful digital experiences using modern technology and innovation.
-                    </p>
-                    <p>
-                        As an independent team of creators with over a decade of experience in the IT industry, we know what it takes to design, build and maintain robust solutions. Our core focuses include:
-                    </p>
+                    <p>We strive to empower people through intuitive, engaging, and meaningful digital experiences using modern technology and innovation.</p>
+                    <p>As an independent team of seasoned professionals and emerging talent, we know what it takes to design, build, and maintain robust solutions. Our core focuses include:</p>
                     <ul>
                         <li>Custom software development and IT systems architecture</li>
                         <li>End-to-end product lifecycle management</li>
                         <li>Propagating best practices in software development</li>
                         <li>Developing innovative solutions and incubating new ideas</li>
+                        <li>Gamified learning experiences and educational technology</li>
+                        <li>Mentorship, community building, and knowledge sharing</li>
                     </ul>
+                    <p>We believe that collaboration between experts in AI, automation, design, QA, and development drives the best results. That’s why we combine deep technical expertise with creative problem-solving to tackle projects of any scale.</p>
+                    <p>From architecting enterprise systems and automating workflows to launching interactive learning platforms like CodeQuest and MindLoop, our mission is to deliver solutions that solve today’s challenges and spark tomorrow’s innovations.</p>
                 </div>
             </div>
         </section>
@@ -109,40 +136,82 @@
             <div class="container">
                 <h2 class="text-center mb-4">About Us</h2>
                 <p class="text-center">Creative Codes is a passionate team of developers, designers, and dreamers dedicated to delivering high-quality software with a creative touch. We value simplicity, performance, and user happiness.</p>
+                <p>We combine creativity and technical rigor to deliver bespoke solutions across industries. From concept to launch, we partner closely with our clients to ensure every decision aligns with their business goals and the needs of their users.</p>
+                <p>Our process is built on open communication, agile methodologies, and iterative feedback loops. By embracing the latest frameworks and tools, we stay adaptable in a fast-evolving tech landscape—delivering scalable, maintainable, and future-proof software.</p>
+                <p>Beyond coding, we’re committed to community and continuous learning. Through workshops, open-source contributions, and interactive learning initiatives like CodeQuest, we empower developers, designers, and enthusiasts to grow, collaborate, and innovate alongside us.</p>
             </div>
         </section>
 
         <section id="products">
             <div class="container">
-                <h2 class="text-center mb-5">Our Products</h2>
+                <h2 class="text-center mb-5">Our Upcoming Projects</h2>
                 <div class="row">
                     <!-- CodeQuest -->
                     <div class="col-12 col-md-4 mb-4">
                         <div class="product-card text-center" data-attr="box_code_quest">
                             <h5>CodeQuest</h5>
-                            <p>Learn to code through fun quests and daily challenges.</p>
+                            <p>Interactive “topic cards” covering everything from core Java to cutting-edge cloud patterns. Learn, play, and earn points as you level up your skills.</p>
                         </div>
                     </div>
-
                     <!-- MindLoop -->
                     <div class="col-12 col-md-4 mb-4">
                         <div class="product-card text-center" data-attr="box_mind_loop">
                             <h5>MindLoop</h5>
-                            <p>Build new skills through gamified and repeatable learning.</p>
+                            <p>Build new skills through gamified quizzes, streaks, and repeatable learning.</p>
                         </div>
                     </div>
-
                     <!-- PlanForge -->
                     <div class="col-12 col-md-4 mb-4">
                         <div class="product-card text-center" data-attr="box_plan_forge">
                             <h5>PlanForge</h5>
-                            <p>Start your project with a structured and guided workflow.</p>
+                            <p>A guided workflow builder that walks you from idea to deployment: analysis, design, tech stack selection, CI/CD setup, infrastructure, and launch.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <section id="get_involved">
+            <div class="container">
+                <h2 class="text-center mb-5">Get Involved</h2>
+                <div class="row text-center">
+                    <!-- Request a Demo -->
+                    <div class="col-12 col-md-4 mb-4">
+                        <div class="involve-card p-4 h-100">
+                            <h5>See a Demo</h5>
+                            <p>Our applications are in active development. Drop us a line to schedule an early demo and give feedback.</p>
+                            <a href="#contact" class="btn btn-primary" data-attr="get_involved_request_demo">Request a Demo</a>
+                        </div>
+                    </div>
+                    <!-- Support & Donations -->
+                    <div class="col-12 col-md-4 mb-4">
+                        <div class="involve-card p-4 h-100">
+                            <h5>Support & Donations</h5>
+                            <p>Love what we’re building? Your contributions help us keep projects free and fuel new experiences.</p>
+                            <a href="#contact" class="btn btn-success" data-attr="get_involved_donate_now">Donate Now</a>
+                        </div>
+                    </div>
+                    <!-- Collaborate or Join -->
+                    <div class="col-12 col-md-4 mb-4">
+                        <div class="involve-card p-4 h-100">
+                            <h5>Collaborate or Join Us</h5>
+                            <p>Looking for a passionate team to tackle your next challenge or seeking an internship? Let’s chat.</p>
+                            <a href="#contact" class="btn btn-outline-secondary" data-attr="get_involved_contact_us">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="key_phrases">
+            <div class="container">
+                <h2 class="text-center mb-5">SEO & Key Phrases</h2>
+                <div class="row">
+                    To help new visitors find us, we’ll optimize around:
+                    Creative Codes, custom software development, Java specialists, IT automation, technology education, gamified learning, CI/CD consulting, family tech team.
+                </div>
+            </div>
+        </section>
 
         <section id="contact" class="bg-light">
             <div class="container">
@@ -150,18 +219,18 @@
                 <form class="row g-3">
                     <div class="col-12 col-md-6">
                         <label for="name" class="form-label">Your Name</label>
-                        <input type="text" class="form-control" id="name"  data-attr="input_contact_name" required />
+                        <input type="text" class="form-control" id="name" data-attr="input_contact_name" required />
                     </div>
                     <div class="col-12 col-md-6">
                         <label for="email" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="email"  data-attr="input_contact_email" required />
+                        <input type="email" class="form-control" id="email" data-attr="input_contact_email" required />
                     </div>
                     <div class="col-12">
                         <label for="message" class="form-label">Message</label>
-                        <textarea class="form-control" id="message" rows="4"  data-attr="input_contact_message" required></textarea>
+                        <textarea class="form-control" id="message" rows="4" data-attr="input_contact_message" required></textarea>
                     </div>
                     <div class="col-12 text-center">
-                        <button type="submit" data-attr="button_contact_send" class="btn btn-primary px-4">Send</button>
+                        <button type="submit" class="btn btn-primary px-4" data-attr="button_contact_send">Send</button>
                     </div>
                 </form>
             </div>
